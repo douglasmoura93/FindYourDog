@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Projeto Enext</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+	<link rel="shortcut icon" href="https://pngimage.net/wp-content/uploads/2018/05/casa-stark-png-5.png">
+	<link href="https://fonts.googleapis.com/css?family=Red+Rose|Roboto|Lato|Mulish|Sora" rel="stylesheet">
+</head>
+<body>
+
+	<div class="bloco">	
+		<!--Menu-Main Lateral-->	
+		<div class="row mb-5 left">
+			<div class="col-20" style="margin-top:50px">
+				<nav id="navbarVertical" class="navbar navbar-light br-light">
+					<nav class="nav nav-pills flex-column">
+
+						<!-- Menu de Seleção de Raças-->
+						<div class="container">
+							<div class="form-group col-20 text-center left">
+								<span>Raça do Animal:</span>
+								<select class="input_racas form-control">
+									<option value="none" disabled selected>Raça</option>
+								</select>
+							</div>
+
+							<!--Menu de Seleção de Cores de Fonte -->
+							<!--https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/-->
+							<div class="form-group col-20 text-center left">
+								<span>Cor da Fonte:</span>
+								<select class="input_cores form-control">
+									<option value="none" disabled selected>Cor</option>
+									<option value="Maroon">Marrom</option>
+									<option value="Fuchsia / Magenta">Megenta</option>
+									<option value="MidnightBlue">Azul</option>
+									<option value="DarkGreen">Verde</option>
+									<option value="Chocolate">Chocolate</option>
+								</select>
+							</div>
+
+							<!-- Menu de Estilo de Fonte -->
+							<div class="form-group col-20 text-center">
+								<span>Estilo de Fonte:</span>
+								<select class="input_fontes form-control">
+									<option value="none" disabled selected>Fonte</option>
+									<option value="Red Rose">Red Rose</option>
+									<option value="Roboto">Roboto</option>
+									<option value="Loto">Lato</option>
+									<option value="Mulish">Mulish</option>
+									<option value="Sora">Sora</option>
+								</select>
+							</div>
+							<!--Nome do Animal -->
+							<div class="form-group col-20 text-center left">
+								<span>Nome do Animal:</span>
+								<div class="input_nomecachorro espaço">
+									<input type="text" class="form-control" value="" placeholder="Digite o nome do Animal" id="textCachorro" class="input_nomecachorro--text" aria-label="Nome do Animal" aria-describedby="basic-addon1">
+								</div>
+								<button class="input_nomecachorro--button btn btn-danger">Salvar</button>
+							</div>
+						</nav>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="bloco">	
+			<!--Foto do Animal com  o nome Embaixo -->
+			<div class="container left">
+				<div class="col-12" >
+					<div class="centralize paddingPattern">
+						<img class="imagem_photo centralize"  width="100%">
+						<p class="descricao_foto">Nome do cachorro</p>
+					</div>
+				</div>
+				<!-- MENSAGEM SALVO COM SUCESSO-->  
+				<h4>
+					<p class="status text-center "></p>
+					<p class="inputHora text-center"></p>
+				</h4>
+			</div>
+			
+		</div>
+		
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!--Usando API para consumir Dados de imagens -->
+		<script src="./src/js/main.js"></script>
+	</body>
+	</html>

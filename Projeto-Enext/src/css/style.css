@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Rose|Roboto|Lato|Mulish|Sora');
+
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin:0%;
+  padding: 0%;
+  color: #111;
+  background: #5ac3cd;
+}
+.bloco{
+  float: left;
+  width: 30%;
+  height: 300px;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+.espaço {
+  padding: 10px;
+}
+
+.centralize{
+  margin:0 auto;
+  text-align: center;
+}
+.inputBlock .custom-select{
+  width:140px;
+}
+.paddingPattern{
+  padding:20px 0 20px 0;
+}
+.descricao_foto{
+  z-index:999;
+  margin-top:-50px;
+}
+.inputBlock{
+  display:Flex;
+  justify-content: space-between;
+  width:70%;
+}
+@media (max-width: 720px) {
+  .inputBlock{display:block;}
+  .inputBlock .custom-select{margin-top:5px;}
+  .input_nomecachorro{margin-top:20px;}
+}
+.input_nomecachorro{
+  display: flex;
+}
+.input_nomecachorro--text{
+  width:210px
+}
+.input_nomecachorro--button{
+  margin-left:20px;
+}
